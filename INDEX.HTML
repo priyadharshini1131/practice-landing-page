@@ -10,7 +10,8 @@
     <header>
         <nav>
             <a href="#" class="logo">
-                <h1>FoodieExpress Logo</h1>
+              <img src="./Public/logo.png" alt="FoodieExpress Logo" loading="lazy">
+                
             </a>
             <div class="nav-links">   
               <a href="#home">Home</a>
@@ -18,6 +19,11 @@
               <a href="#about">About</a>
                <a href="#contact">Home</a>
             </div>
+            <div class="menu-btn"></div>
+            <div class="floating-order">
+              <span class="card-count"></span>
+           <i class="fas fa-shopping cart"></i> 
+          </div>
          </nav>
     </header>
     <section class="hero">
@@ -29,56 +35,172 @@
            <div class="features-container">
             <div class="feature-card">
              <div class="feature-logo">
-             <img src="https://placehold.co/100x100 " alt="img1">
+             <img src="https://placehold.co/100x100 " alt="Fast Delivery"loading="lazy">
              </div>
               <h3> Express Delivery</h3>
               <p>hot food at your doorstep within 30 minutes</p>
              </div>
               <div class="feature-card">
              <div class="feature-logo">
-             <img src="https://placehold.co/100x100 " alt="img1">
+             <img src="https://placehold.co/100x100 " alt="quality Food"loading="lazy">
              </div>
               <h3> Top quality</h3>
               <p>parented with premium restaurents</p>   
            </div> 
            <div class="feature-card">
            <div class="feature- logo">
-           <img src="https://placehold.co/100x100 " alt="img1">
-           <img src =
+           <img src="https://placehold.co/100x100 " alt="Easy order" loading="lazy">
            </div>
            <h3> Easy order</h3>
            <p>simple and quick ordering process</p>
            </div>
          </section>
-         <div id="menu">
-           <h4 id="section">Popular Dishes</h4>
-           <div class="Dishes-grid">
-           <div class="Dish- card">
-                <div id="Dish-image">
-                 
-                </div>
-                <h5>Margherita Pizza</h5>
-                <h6>Fresh tomatoes, mozzarella, and basil</h6>
-                <h7>$12.99</h7>
-
+  <!-- Popular Dishes Section -->
+    <section class="popular-dishes" id="menu">
+      <h2 class="section-title">Popular Dishes</h2>
+      <div class="dishes-grid">
+        <div class="dish-card">
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+              alt="Pizza"
+              loading="lazy"
+            />
+            <span class="dish-tag">Bestseller</span>
+          </div>
+          <div class="dish-info">
+            <h3>Margherita Pizza</h3>
+            <p>Fresh tomatoes, mozzarella, and basil</p>
+            <div class="price">
+              <span>$12.99</span>
+              <button class="order-button">Add to Cart</button>
             </div>
-            <div class="Dish- card">
-             <div id="Dish-image">
-             
-             <img url="https://images.unsplash.com/photo-1513104890138-7c749659a591">
-              </div>
-              <h5>Classic Burger</h5>
-              <h6>Premium beef patty with fresh vegetables</h6>
-              <h7>$8.99</h7>
-              </div>
-              <div class="Dish- card">
-              <div id="Dish-image">
-              
-              <img url="https://images.unsplash.com/photo-1513104890138-7c749659a591">
-              </div>
-               <h5>Pasta Alfredo</h5>
-               <h6>Creamy sauce with parmesan cheese</h6>
-               <h7>$10.99</h7>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+              alt="Burger"
+              loading="lazy"
+            />
+            <span class="dish-tag">Popular</span>
+          </div>
+          <div class="dish-info">
+            <h3>Classic Burger</h3>
+            <p>Premium beef patty with fresh vegetables</p>
+            <div class="price">
+              <span>$8.99</span>
+              <button class="order-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+              alt="Pasta"
+              loading="lazy"
+            />
+            <span class="dish-tag">New</span>
+          </div>
+          <div class="dish-info">
+            <h3>Pasta Alfredo</h3>
+            <p>Creamy sauce with parmesan cheese</p>
+            <div class="price">
+              <span>$10.99</span>
+              <button class="order-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+           <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About FoodieExpress</h2>
+          <p>
+            We connect food lovers with the best local restaurants, ensuring
+            quick delivery and exceptional quality.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e"
+            alt="About Us"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-container">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 234 567 890</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>contact@foodieexpress.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Food Street, Cuisine City</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="./public/logo.png"
+            alt="FoodieExpress Logo"
+            loading="lazy"
+          />
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">&copy; 2024 FoodieExpress. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+                  
+            
+            
+            
+            >
+            
+            
+            
+            
+            
+            
+            
+            
+            ">
+            
+            
+            
+            
         
         
         
